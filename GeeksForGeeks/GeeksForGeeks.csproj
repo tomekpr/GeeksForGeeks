@@ -54,6 +54,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Algos\Arrays\AbsDistinctCount.cs" />
+    <Compile Include="Algos\Arrays\ContiguousSubsequenceWhostSumOfElementsEquals.cs" />
+    <Compile Include="Algos\Arrays\CountDistinctSlices.cs" />
+    <Compile Include="Algos\Arrays\CountTriangles.cs" />
+    <Compile Include="Algos\Arrays\FindSubarrayWithGreatestSum.cs" />
     <Compile Include="Algos\Arrays\Rotate.cs" />
     <Compile Include="Algos\Arrays\SortByFrequency.cs" />
     <Compile Include="Algos\Backtracking\RateInAMaze.cs" />
@@ -69,10 +74,13 @@
     <Compile Include="Algos\Lists\FlattenLists.cs" />
     <Compile Include="Algos\Lists\HowLongIsLoopInAList.cs" />
     <Compile Include="Algos\Lists\MakeLoopInList.cs" />
+    <Compile Include="Algos\Lists\PrintListFromEnd.cs" />
     <Compile Include="Algos\Lists\ReverseInGroups.cs" />
     <Compile Include="Algos\Lists\SortListMadeOfZerosOnesTwos.cs" />
     <Compile Include="Algos\Lists\Zipping.cs" />
+    <Compile Include="Algos\Matrix\FindInteger.cs" />
     <Compile Include="Algos\Matrix\PrintUniqueRows.cs" />
+    <Compile Include="Algos\NumberTheory\ChocolateByNumbers.cs" />
     <Compile Include="Algos\NumberTheory\FactorialNumberOfZeros.cs" />
     <Compile Include="Algos\Queues\InterleaveQueue.cs" />
     <Compile Include="Algos\Recursion\TowerOfHonoi.cs" />
