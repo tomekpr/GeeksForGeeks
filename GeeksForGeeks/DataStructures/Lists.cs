@@ -59,4 +59,17 @@ namespace GeeksForGeeks.DataStructures
 
 		public override string ToString() => Value.ToString();
 	}
+
+	// List with random pointer
+	class RNode
+	{
+		public int Value;
+		public RNode Next;
+		public RNode Random;
+
+		public RNode() { }
+		public RNode(int x) => Value = x;
+
+		public override string ToString() => Value.ToString();
+	}
 }

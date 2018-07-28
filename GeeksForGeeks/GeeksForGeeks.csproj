@@ -67,6 +67,7 @@
     <Compile Include="Algos\Graphs\BfsOnAGrid.cs" />
     <Compile Include="Algos\Graphs\DetectCycleInAGraph.cs" />
     <Compile Include="Algos\Graphs\TopologicalSort.cs" />
+    <Compile Include="Algos\Lists\CloneListWithRandomPointer.cs" />
     <Compile Include="Algos\Lists\DeleteEveryKthNode.cs" />
     <Compile Include="Algos\Lists\DetectLoopInLinkedList.cs" />
     <Compile Include="Algos\Lists\FindBeginningOfTheLoop.cs" />
@@ -75,6 +76,7 @@
     <Compile Include="Algos\Lists\HowLongIsLoopInAList.cs" />
     <Compile Include="Algos\Lists\MakeLoopInList.cs" />
     <Compile Include="Algos\Lists\PrintListFromEnd.cs" />
+    <Compile Include="Algos\Lists\RearrangeList.cs" />
     <Compile Include="Algos\Lists\ReverseInGroups.cs" />
     <Compile Include="Algos\Lists\SortListMadeOfZerosOnesTwos.cs" />
     <Compile Include="Algos\Lists\Zipping.cs" />
@@ -82,6 +84,7 @@
     <Compile Include="Algos\Matrix\PrintUniqueRows.cs" />
     <Compile Include="Algos\NumberTheory\ChocolateByNumbers.cs" />
     <Compile Include="Algos\NumberTheory\FactorialNumberOfZeros.cs" />
+    <Compile Include="Algos\NumberTheory\NextHigherNumber.cs" />
     <Compile Include="Algos\Queues\InterleaveQueue.cs" />
     <Compile Include="Algos\Recursion\TowerOfHonoi.cs" />
     <Compile Include="Algos\Searching\BinarySearch.cs" />
@@ -128,6 +131,7 @@
     <Compile Include="Algos\Trees\MaxWidthTree.cs" />
     <Compile Include="Algos\Trees\NumberOfChildrenOfGivenNodeInNaryTree.cs" />
     <Compile Include="Algos\Trees\Preorder.cs" />
+    <Compile Include="Algos\Trees\SumDiagonalsForBinaryTree.cs" />
     <Compile Include="Algos\Trees\SumOfParentNodesThatHaveChildX.cs" />
     <Compile Include="Algos\Trees\VerticalSum.cs" />
     <Compile Include="AlgoUtils\Collections.cs" />
