@@ -66,7 +66,7 @@ namespace GeeksForGeeks.Algos.Sorting
 				index_in_upper_half++;
 			}
 
-			write_index -= 1 ;
+			write_index--;
 			while(write_index >= 0)
 			{
 				arr[left + write_index] = tmp[write_index];
