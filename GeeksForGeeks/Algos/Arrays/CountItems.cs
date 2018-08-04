@@ -6,6 +6,7 @@ namespace GeeksForGeeks.Algos.Arrays
 	// First search - find beg of the range.
 	// Second search - find end of the range.
 	// Dont count elements 1 by 1 (O(n)) just do simple math end-beg + 1
+	// https://codesays.com/2014/solution-to-number-of-k-from-jobdu/
 	class ItemCountInArray
 	{
 		public int CountItems(int[] arr, int k)
