@@ -59,6 +59,39 @@ namespace GeeksForGeeks.Algos.Arrays
 
 			return count;
 		}
+
+		public static int count(int[] input, int target)
+		{
+			int begin = 0, end = 0;
+			// Find the begin position of target(s) in input, with binary search.
+			int bs_begin = 0, bs_end = input.Length - 1, bs_middle;
+			while (bs_begin <= bs_end)
+			{
+				bs_middle = (bs_begin + bs_end) / 2;
+				if (target <= input[bs_middle]) bs_end = bs_middle - 1;
+				else bs_begin = bs_middle + 1;
+			}
+			if (bs_end + 1 >= input.Length || input[bs_end + 1] != target)
+			{
+				// Did not find the target in the input array.
+				return 0;
+			}
+			else
+			{
+				begin = bs_end + 1;
+			}
+			// Find the end position of target(s) in input, with binary search.
+			bs_begin = begin;
+			bs_end = input.Length - 1;
+			while (bs_begin <= bs_end)
+			{
+				bs_middle = (bs_begin + bs_end) / 2;
+				if (target < input[bs_middle]) bs_end = bs_middle - 1;
+				else bs_begin = bs_middle + 1;
+			}
+			end = bs_begin - 1;
+			return end - begin + 1;
+		}
 	}
 
 	[TestFixture]
@@ -71,6 +104,17 @@ namespace GeeksForGeeks.Algos.Arrays
 		{
 			var sut = new ItemCountInArray();
 			var result = sut.CountItems(new int[] { 1, 2, 3, 3, 3, 3, 4, 5 }, k);
+
+			Assert.That(result == exp);
+		}
+
+		[TestCase(3, 4)]
+		[TestCase(1, 1)]
+		[TestCase(17, 0)]
+		public void Test2(int k, int exp)
+		{
+			var sut = new ItemCountInArray();
+			var result = ItemCountInArray.count(new int[] { 1, 2, 3, 3, 3, 3, 4, 5 }, k);
 
 			Assert.That(result == exp);
 		}
